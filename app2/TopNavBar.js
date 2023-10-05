@@ -1,10 +1,16 @@
 import React from 'react';
-import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
+import { View, Text, TouchableOpacity, StyleSheet, Touchable } from 'react-native';
 
 const TopNavigationBar = () => {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>My App</Text>
+      <TouchableOpacity style={styles.button}>
+        <Text style={styles.buttonText}>About</Text>
+      </TouchableOpacity>
+      <TouchableOpacity style={styles.button}>
+        <Text style={styles.buttonText}>Calendar</Text>
+      </TouchableOpacity>
+      <Text style={styles.title}>The Rock</Text>
       <TouchableOpacity style={styles.button}>
         <Text style={styles.buttonText}>Settings</Text>
       </TouchableOpacity>
@@ -15,10 +21,10 @@ const TopNavigationBar = () => {
 const styles = StyleSheet.create({
   container: {
     flexDirection: 'row',
-    justifyContent: 'space-between',
+    justifyContent: 'space-evenly ',
     alignItems: 'center',
     backgroundColor: 'lightblue',
-    padding: 10,
+    padding: 25,
   },
   title: {
     fontSize: 20,
