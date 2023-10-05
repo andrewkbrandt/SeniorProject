@@ -1,2 +1,2 @@
 # SeniorProject
-idk
+Ignore "app2". Discarded version.
